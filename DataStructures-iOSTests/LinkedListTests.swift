@@ -71,19 +71,21 @@ class LinkedListTests: XCTestCase {
     
     func testListCount() {
         var list = EMList<Int>()
-        for var i = 0; i < self.count; i++ {
+        var counts = 100
+        var removes = counts / 3
+        for var i = 0; i < counts; i++ {
             list.append(i)
         }
         
         self.measureBlock() {
-            XCTAssert(list.count == self.count, "List counts should equal the same")
+            XCTAssert(list.count == counts, "List counts should equal the same")
         }
         
-        for (var i = 0; i < self.count / 3; i++) {
+        for (var i = 0; i < removes; i++) {
             list.removeItemAtIndex(i)
         }
         
-        XCTAssert(list.count == self.count - self.count / 3, "List count should reflect removing objects.")
+        XCTAssert(list.count == counts - removes, "List count should reflect removing objects.")
     }
     
     func testArrayCount() {
