@@ -23,24 +23,35 @@ public class EMList<T: Equatable> : SequenceType {
         }
     }
     
+    /// Returns `true` if the list contains no objects.
+    public var isEmpty: Bool {
+        get {
+            return self.firstNode == nil
+        }
+    }
+    
+    /// The first element of the list or `null` if empty.
     public var first: T? {
         get {
             return firstNode?.value
         }
     }
     
+    /// The last element of the list or `null` if empty.
     public var last: T? {
         get {
             return lastNode?.value
         }
     }
     
+    /// The number of elements in the list.
     public var count: Int {
         get {
             return countIndex
         }
     }
     
+    /// The index in the list of the object. Returns `null` if the object does not exist.
     public func indexOfObject(object: T) -> Int? {
         var index: Int? = nil;
         
@@ -68,6 +79,7 @@ public class EMList<T: Equatable> : SequenceType {
         return index
     }
 
+    /// Appends the `newElement` to the list. This can be considerably faster than using a standard Array.
     public func append(newElement: T) {
         let node = EMLLNode(value: newElement)
         if (firstNode == nil) {
@@ -89,6 +101,10 @@ public class EMList<T: Equatable> : SequenceType {
         countIndex = 0
     }
     
+    /**
+     * Inserts the object into the list at the index. For example, if the list contains elements `0, 1, 2, 3` and this
+     * method is invoked with object 5 at index 1, the list will look like: `0, 5, 1, 2, 3`.
+     */
     public func insert(object: T, atIndex index: Int) {
         let currentNode = self.getNodeAtIndex(index - 1)
         let newNode = EMLLNode(value: object)
@@ -100,11 +116,13 @@ public class EMList<T: Equatable> : SequenceType {
         }
     }
 
+    /// Returns the element at the specified index in the list. In the worst case this is O(n) time complexity.
     public func objectAtIndex(index: Int) -> T? {
         let currentNode = self.getNodeAtIndex(index)
         return currentNode?.value
     }
 
+    /// Removes the element at the specified index in the list. In the worst case this is O(n) time complexity.
     public func removeItemAtIndex(index: Int) {
         if let node = getNodeAtIndex(index) {
             let previousNode = node.previousNode

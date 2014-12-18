@@ -16,12 +16,12 @@ public class EMSet<T: Hashable>: SequenceType {
         count = 0
         array = Array<EMList<T>>()
         array = createArrayOfListsToCapacity(capacity)
+        array.first
     }
     
     public func addObject(object: T) -> T? {
         let nextCount = count + 1
         if (nextCount > Int(Double(capacity) * 0.7)) {
-            // Reassign the set.
             self.reassignObjects()
         }
         
