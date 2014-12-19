@@ -40,16 +40,16 @@ class EMListIteratorTests: XCTestCase {
         iterator.first
         var index = 0
         do {
-            XCTAssertEqual(iterator.currentValue!, index++, "The value should equal the index.")
-        } while iterator.next != nil
+            XCTAssertEqual(iterator.nextValue!, ++index, "The value should equal the index.")
+        } while iterator.next
     }
 
     func testReverseIteration() {
         iterator.last
-        var index = list.count
-        
+        var index = list.count - 1
+    
         do {
-            XCTAssertEqual(iterator.currentValue!, --index, "The value should equal the index when reversing.")
-        } while iterator.previous != nil
+            XCTAssertEqual(iterator.previousValue!, --index, "The value should equal the index when reversing.")
+        } while iterator.previous
     }
 }

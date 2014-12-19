@@ -27,14 +27,26 @@ public class EMListIterator<T: Equatable> {
         return currentNode?.value
     }
     
-    public var next: T? {
+    public var next: Bool {
+        get {
+            return currentNode?.nextNode != nil
+        }
+    }
+    
+    public var previous: Bool {
+        get {
+            return currentNode?.previousNode != nil
+        }
+    }
+    
+    public var nextValue: T? {
         get {
             currentNode = currentNode?.nextNode
             return currentNode?.value
         }
     }
     
-    public var previous: T? {
+    public var previousValue: T? {
         get {
             currentNode = currentNode?.previousNode
             return currentNode?.value
