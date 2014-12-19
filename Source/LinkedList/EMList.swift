@@ -9,8 +9,8 @@
 import Foundation
 
 public class EMList<T: Equatable> : SequenceType {
-    private var firstNode: EMLLNode<T>? = nil
-    private var lastNode: EMLLNode<T>? = nil
+    internal var firstNode: EMListNode<T>? = nil
+    internal var lastNode: EMListNode<T>? = nil
     private var countIndex: Int
     
     public subscript(index: Int) -> T? {
@@ -56,7 +56,7 @@ public class EMList<T: Equatable> : SequenceType {
         var index: Int? = nil;
         
         if firstNode != nil {
-            var currentNode: EMLLNode<T>?
+            var currentNode: EMListNode<T>?
             var objectFound = false
             var currentIndex = -1
             do {
@@ -81,14 +81,16 @@ public class EMList<T: Equatable> : SequenceType {
 
     /// Appends the `newElement` to the list. This can be considerably faster than using a standard Array.
     public func append(newElement: T) {
-        let node = EMLLNode(value: newElement)
+        let node = EMListNode(value: newElement)
+        var isFirstNode = false
         if (firstNode == nil) {
             firstNode = node
+            isFirstNode = true
         }
         if let lastNode = self.lastNode {
             lastNode.nextNode = node
             node.previousNode = lastNode
-        } else {
+        } else if !isFirstNode {
             node.previousNode = firstNode
         }
 
@@ -107,7 +109,7 @@ public class EMList<T: Equatable> : SequenceType {
      */
     public func insert(object: T, atIndex index: Int) {
         let currentNode = self.getNodeAtIndex(index - 1)
-        let newNode = EMLLNode(value: object)
+        let newNode = EMListNode(value: object)
 
         if let currentNode = currentNode {
             newNode.nextNode = currentNode.nextNode
@@ -134,7 +136,7 @@ public class EMList<T: Equatable> : SequenceType {
     }
     
     public func generate() -> GeneratorOf<T> {
-        var currentNode: EMLLNode<T>? = nil
+        var currentNode: EMListNode<T>? = nil
 
         return GeneratorOf<T> {
             if (currentNode == nil) {
@@ -154,7 +156,7 @@ public class EMList<T: Equatable> : SequenceType {
         }
     }
     
-    private func getNodeAtIndex(index: Int) -> EMLLNode<T>? {
+    private func getNodeAtIndex(index: Int) -> EMListNode<T>? {
         var currentNode = firstNode
         
         for (var i = 0; i < index; i++) {

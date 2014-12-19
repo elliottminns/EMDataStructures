@@ -35,7 +35,7 @@ public class EMSet<T: Hashable>: SequenceType {
     
     public func generate() -> GeneratorOf<T> {
         var currentList: EMList<T>? = nil
-        var currentListNode: EMLLNode<T>? = nil
+        var currentListNode: EMListNode<T>? = nil
         let values = self.toArray()
         var currentIndex = 0
         

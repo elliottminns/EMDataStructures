@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Elliott Minns. All rights reserved.
 //
 
-internal class EMLLNode<T> {
-    internal var nextNode: EMLLNode<T>?
-    internal var previousNode: EMLLNode<T>?
+internal class EMListNode<T> {
+    internal var nextNode: EMListNode<T>?
+    internal var previousNode: EMListNode<T>?
     internal var value: T
     
     init(value: T) {

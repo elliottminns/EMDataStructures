@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F2C1EAD1A409091008FE741 /* EMLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41762A1A40897600FFC29A /* EMLinkedList.swift */; };
-		4F2C1EAF1A409929008FE741 /* EMLLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C1EAE1A409929008FE741 /* EMLLNode.swift */; };
-		4F2C1EB01A409B3D008FE741 /* EMLLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C1EAE1A409929008FE741 /* EMLLNode.swift */; };
+		4F2C1EAD1A409091008FE741 /* EMList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41762A1A40897600FFC29A /* EMList.swift */; };
+		4F2C1EAF1A409929008FE741 /* EMListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C1EAE1A409929008FE741 /* EMListNode.swift */; };
+		4F2C1EB01A409B3D008FE741 /* EMListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C1EAE1A409929008FE741 /* EMListNode.swift */; };
 		4F4176121A40893A00FFC29A /* DataStructures-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4176111A40893A00FFC29A /* DataStructures-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F4176181A40893A00FFC29A /* iOSDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41760C1A40893A00FFC29A /* iOSDataStructures.framework */; };
-		4F41761F1A40893A00FFC29A /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41761E1A40893A00FFC29A /* LinkedListTests.swift */; };
-		4F41762B1A40897600FFC29A /* EMLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41762A1A40897600FFC29A /* EMLinkedList.swift */; };
+		4F41761F1A40893A00FFC29A /* EMListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41761E1A40893A00FFC29A /* EMListTests.swift */; };
+		4F41762B1A40897600FFC29A /* EMList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41762A1A40897600FFC29A /* EMList.swift */; };
 		4F7E18D21A41C58A00727A5D /* EMSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E18D11A41C58A00727A5D /* EMSet.swift */; };
 		4F7E18D31A41C58A00727A5D /* EMSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E18D11A41C58A00727A5D /* EMSet.swift */; };
 		4F9299B31A42F026008A8CC9 /* SetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9299B21A42F026008A8CC9 /* SetTests.swift */; };
+		4FCEEBE21A4456CF00EF585A /* EMListIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */; };
+		4FCEEBE31A4456CF00EF585A /* EMListIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */; };
+		4FCEEBE51A44587700EF585A /* EMListIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEEBE41A44587700EF585A /* EMListIteratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,17 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4F2C1EAE1A409929008FE741 /* EMLLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMLLNode.swift; sourceTree = "<group>"; };
+		4F2C1EAE1A409929008FE741 /* EMListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListNode.swift; sourceTree = "<group>"; };
 		4F41760C1A40893A00FFC29A /* iOSDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4176101A40893A00FFC29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F4176111A40893A00FFC29A /* DataStructures-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructures-iOS.h"; sourceTree = "<group>"; };
 		4F4176171A40893A00FFC29A /* iOSDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F41761D1A40893A00FFC29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F41761E1A40893A00FFC29A /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
-		4F41762A1A40897600FFC29A /* EMLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMLinkedList.swift; sourceTree = "<group>"; };
+		4F41761E1A40893A00FFC29A /* EMListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMListTests.swift; sourceTree = "<group>"; };
+		4F41762A1A40897600FFC29A /* EMList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMList.swift; sourceTree = "<group>"; };
 		4F41762C1A408B1A00FFC29A /* DataStructuresPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataStructuresPlayground.playground; sourceTree = "<group>"; };
 		4F7E18D11A41C58A00727A5D /* EMSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EMSet.swift; path = Source/Set/EMSet.swift; sourceTree = "<group>"; };
 		4F9299B21A42F026008A8CC9 /* SetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTests.swift; sourceTree = "<group>"; };
+		4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListIterator.swift; sourceTree = "<group>"; };
+		4FCEEBE41A44587700EF585A /* EMListIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListIteratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +107,8 @@
 		4F41761B1A40893A00FFC29A /* DataStructures-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				4F41761E1A40893A00FFC29A /* LinkedListTests.swift */,
+				4F41761E1A40893A00FFC29A /* EMListTests.swift */,
+				4FCEEBE41A44587700EF585A /* EMListIteratorTests.swift */,
 				4F9299B21A42F026008A8CC9 /* SetTests.swift */,
 				4F41761C1A40893A00FFC29A /* Supporting Files */,
 			);
@@ -129,8 +135,9 @@
 		4F4176291A40897600FFC29A /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				4F41762A1A40897600FFC29A /* EMLinkedList.swift */,
-				4F2C1EAE1A409929008FE741 /* EMLLNode.swift */,
+				4F41762A1A40897600FFC29A /* EMList.swift */,
+				4F2C1EAE1A409929008FE741 /* EMListNode.swift */,
+				4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */,
 			);
 			name = LinkedList;
 			path = Source/LinkedList;
@@ -251,9 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F41762B1A40897600FFC29A /* EMLinkedList.swift in Sources */,
-				4F2C1EAF1A409929008FE741 /* EMLLNode.swift in Sources */,
+				4F41762B1A40897600FFC29A /* EMList.swift in Sources */,
+				4F2C1EAF1A409929008FE741 /* EMListNode.swift in Sources */,
 				4F7E18D21A41C58A00727A5D /* EMSet.swift in Sources */,
+				4FCEEBE21A4456CF00EF585A /* EMListIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7E18D31A41C58A00727A5D /* EMSet.swift in Sources */,
+				4FCEEBE51A44587700EF585A /* EMListIteratorTests.swift in Sources */,
 				4F9299B31A42F026008A8CC9 /* SetTests.swift in Sources */,
-				4F2C1EAD1A409091008FE741 /* EMLinkedList.swift in Sources */,
-				4F2C1EB01A409B3D008FE741 /* EMLLNode.swift in Sources */,
-				4F41761F1A40893A00FFC29A /* LinkedListTests.swift in Sources */,
+				4F2C1EAD1A409091008FE741 /* EMList.swift in Sources */,
+				4F2C1EB01A409B3D008FE741 /* EMListNode.swift in Sources */,
+				4F41761F1A40893A00FFC29A /* EMListTests.swift in Sources */,
+				4FCEEBE31A4456CF00EF585A /* EMListIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
