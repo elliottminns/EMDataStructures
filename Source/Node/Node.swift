@@ -1,14 +1,13 @@
 //
-//  LLNode.swift
+//  Node.swift
 //  DataStructures
 //
-//  Created by Elliott Minns on 16/12/2014.
-//  Copyright (c) 2014 Elliott Minns. All rights reserved.
+//  Created by Elliott Minns on 04/03/2015.
+//  Copyright (c) 2015 Elliott Minns. All rights reserved.
 //
 
-internal class EMListNode<T> : Equatable {
-    internal var nextNode: EMListNode<T>?
-    internal var previousNode: EMListNode<T>?
+class Node<T> {
+    internal var next: Node<T>?
     internal var value: T
     
     init(value: T) {
@@ -16,7 +15,7 @@ internal class EMListNode<T> : Equatable {
     }
 }
 
-func == <T>(lhs: EMListNode<T>, rhs: EMListNode<T>) -> Bool {
+func == <T>(lhs: Node<T>, rhs: Node<T>) -> Bool {
     let lhsPtr: COpaquePointer = Unmanaged<AnyObject>.passUnretained(lhs).toOpaque()
     let rhsPtr: COpaquePointer = Unmanaged<AnyObject>.passUnretained(rhs).toOpaque()
     return lhsPtr == rhsPtr

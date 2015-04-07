@@ -12,7 +12,7 @@ public class EMListIterator<T: Equatable> {
     let list: EMList<T>
     var currentNode: EMListNode<T>?
     
-    init(list: EMList<T>) {
+    public init(list: EMList<T>) {
         self.list = list
     }
     

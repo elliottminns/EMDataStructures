@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import iOSDataStructures
 
 class SetTests: XCTestCase {
 
@@ -35,6 +36,4 @@ class SetTests: XCTestCase {
         
         XCTAssertEqual(set.count, 3, "Set should only have 3 objects.")
     }
-    
-
 }

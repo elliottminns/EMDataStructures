@@ -7,22 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F2C1EAD1A409091008FE741 /* EMList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41762A1A40897600FFC29A /* EMList.swift */; };
 		4F2C1EAF1A409929008FE741 /* EMListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C1EAE1A409929008FE741 /* EMListNode.swift */; };
-		4F2C1EB01A409B3D008FE741 /* EMListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C1EAE1A409929008FE741 /* EMListNode.swift */; };
+		4F3CE94C1A5C486600238ECE /* iOSDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41760C1A40893A00FFC29A /* iOSDataStructures.framework */; };
 		4F4176121A40893A00FFC29A /* DataStructures-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4176111A40893A00FFC29A /* DataStructures-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F4176181A40893A00FFC29A /* iOSDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F41760C1A40893A00FFC29A /* iOSDataStructures.framework */; };
 		4F41761F1A40893A00FFC29A /* EMListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41761E1A40893A00FFC29A /* EMListTests.swift */; };
 		4F41762B1A40897600FFC29A /* EMList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41762A1A40897600FFC29A /* EMList.swift */; };
+		4F45C0351A5AEF6200024228 /* EMListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F45C0341A5AEF6200024228 /* EMListSpec.swift */; };
 		4F7E18D21A41C58A00727A5D /* EMSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E18D11A41C58A00727A5D /* EMSet.swift */; };
-		4F7E18D31A41C58A00727A5D /* EMSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E18D11A41C58A00727A5D /* EMSet.swift */; };
 		4F9299B31A42F026008A8CC9 /* SetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9299B21A42F026008A8CC9 /* SetTests.swift */; };
+		4FA744F11A5D598B00EBC65E /* EMListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA744F01A5D598B00EBC65E /* EMListSpec.swift */; };
+		4FA744F21A5D59BE00EBC65E /* EMList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41762A1A40897600FFC29A /* EMList.swift */; };
+		4FA744F31A5D59C700EBC65E /* EMListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C1EAE1A409929008FE741 /* EMListNode.swift */; };
+		4FA744F41A5D59C900EBC65E /* EMListIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */; };
+		4FA744F51A5D59CC00EBC65E /* EMSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E18D11A41C58A00727A5D /* EMSet.swift */; };
 		4FCEEBE21A4456CF00EF585A /* EMListIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */; };
-		4FCEEBE31A4456CF00EF585A /* EMListIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */; };
 		4FCEEBE51A44587700EF585A /* EMListIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEEBE41A44587700EF585A /* EMListIteratorTests.swift */; };
+		4FF6E6CE1AA70F31004389B5 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6CD1AA70F31004389B5 /* Stack.swift */; };
+		4FF6E6D11AA70F89004389B5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6D01AA70F89004389B5 /* Node.swift */; };
+		4FF6E6D31AA71400004389B5 /* StackSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6D21AA71400004389B5 /* StackSpec.swift */; };
+		4FF6E6E11AA71AFC004389B5 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6E01AA71AFC004389B5 /* StackTests.swift */; };
+		4FF6E6E41AA71FA1004389B5 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6E31AA71FA1004389B5 /* Queue.swift */; };
+		4FF6E6E61AA721AF004389B5 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6E51AA721AF004389B5 /* QueueTests.swift */; };
+		4FF6E6E81AA723F6004389B5 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6E71AA723F6004389B5 /* BinaryTree.swift */; };
+		4FF6E6EB1AA72426004389B5 /* BinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6EA1AA72426004389B5 /* BinaryTreeNode.swift */; };
+		4FF6E6ED1AA726D1004389B5 /* TreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6E6EC1AA726D1004389B5 /* TreeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4F3CE94D1A5C486600238ECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F4176031A40893A00FFC29A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F41760B1A40893A00FFC29A;
+			remoteInfo = iOSDataStructures;
+		};
 		4F4176191A40893A00FFC29A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F4176031A40893A00FFC29A /* Project object */;
@@ -34,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		4F2C1EAE1A409929008FE741 /* EMListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListNode.swift; sourceTree = "<group>"; };
+		4F3CE9461A5C486600238ECE /* iOSDataStructuresInternalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDataStructuresInternalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3CE9491A5C486600238ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F41760C1A40893A00FFC29A /* iOSDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4176101A40893A00FFC29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F4176111A40893A00FFC29A /* DataStructures-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructures-iOS.h"; sourceTree = "<group>"; };
@@ -42,13 +63,33 @@
 		4F41761E1A40893A00FFC29A /* EMListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMListTests.swift; sourceTree = "<group>"; };
 		4F41762A1A40897600FFC29A /* EMList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMList.swift; sourceTree = "<group>"; };
 		4F41762C1A408B1A00FFC29A /* DataStructuresPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataStructuresPlayground.playground; sourceTree = "<group>"; };
+		4F45C0341A5AEF6200024228 /* EMListSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListSpec.swift; sourceTree = "<group>"; };
 		4F7E18D11A41C58A00727A5D /* EMSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EMSet.swift; path = Source/Set/EMSet.swift; sourceTree = "<group>"; };
 		4F9299B21A42F026008A8CC9 /* SetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTests.swift; sourceTree = "<group>"; };
+		4FA744F01A5D598B00EBC65E /* EMListSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListSpec.swift; sourceTree = "<group>"; };
 		4FCEEBE11A4456CF00EF585A /* EMListIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListIterator.swift; sourceTree = "<group>"; };
 		4FCEEBE41A44587700EF585A /* EMListIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMListIteratorTests.swift; sourceTree = "<group>"; };
+		4FF4ECEB1A5AE6100071388B /* Sleipnir.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sleipnir.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/DataStructures-dnespaqdhclwgqcobhbrydglwyka/Build/Products/Debug/Sleipnir.framework"; sourceTree = "<group>"; };
+		4FF6E6CD1AA70F31004389B5 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = Source/Stack/Stack.swift; sourceTree = "<group>"; };
+		4FF6E6D01AA70F89004389B5 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Source/Node/Node.swift; sourceTree = "<group>"; };
+		4FF6E6D21AA71400004389B5 /* StackSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackSpec.swift; sourceTree = "<group>"; };
+		4FF6E6E01AA71AFC004389B5 /* StackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		4FF6E6E31AA71FA1004389B5 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Source/Queue/Queue.swift; sourceTree = "<group>"; };
+		4FF6E6E51AA721AF004389B5 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		4FF6E6E71AA723F6004389B5 /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinaryTree.swift; path = Source/Trees/BinaryTree/BinaryTree.swift; sourceTree = "<group>"; };
+		4FF6E6EA1AA72426004389B5 /* BinaryTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinaryTreeNode.swift; path = Source/Trees/BinaryTree/BinaryTreeNode.swift; sourceTree = "<group>"; };
+		4FF6E6EC1AA726D1004389B5 /* TreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4F3CE9431A5C486600238ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3CE94C1A5C486600238ECE /* iOSDataStructures.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F4176081A40893A00FFC29A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,6 +108,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0261309050F3602EE3CE7FA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F3CE9471A5C486600238ECE /* iOSDataStructuresInternalTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE9481A5C486600238ECE /* Supporting Files */,
+				4FA744F01A5D598B00EBC65E /* EMListSpec.swift */,
+			);
+			path = iOSDataStructuresInternalTests;
+			sourceTree = "<group>";
+		};
+		4F3CE9481A5C486600238ECE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE9491A5C486600238ECE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4F4176021A40893A00FFC29A = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +139,9 @@
 				4F4176281A40895200FFC29A /* Source */,
 				4F41760E1A40893A00FFC29A /* DataStructures-iOS */,
 				4F41761B1A40893A00FFC29A /* DataStructures-iOSTests */,
+				4F3CE9471A5C486600238ECE /* iOSDataStructuresInternalTests */,
 				4F41760D1A40893A00FFC29A /* Products */,
+				0261309050F3602EE3CE7FA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +150,7 @@
 			children = (
 				4F41760C1A40893A00FFC29A /* iOSDataStructures.framework */,
 				4F4176171A40893A00FFC29A /* iOSDataStructuresTests.xctest */,
+				4F3CE9461A5C486600238ECE /* iOSDataStructuresInternalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +178,12 @@
 				4F41761E1A40893A00FFC29A /* EMListTests.swift */,
 				4FCEEBE41A44587700EF585A /* EMListIteratorTests.swift */,
 				4F9299B21A42F026008A8CC9 /* SetTests.swift */,
+				4F45C0341A5AEF6200024228 /* EMListSpec.swift */,
+				4FF6E6D21AA71400004389B5 /* StackSpec.swift */,
 				4F41761C1A40893A00FFC29A /* Supporting Files */,
+				4FF6E6E01AA71AFC004389B5 /* StackTests.swift */,
+				4FF6E6E51AA721AF004389B5 /* QueueTests.swift */,
+				4FF6E6EC1AA726D1004389B5 /* TreeTests.swift */,
 			);
 			path = "DataStructures-iOSTests";
 			sourceTree = "<group>";
@@ -118,6 +191,7 @@
 		4F41761C1A40893A00FFC29A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4FF4ECEB1A5AE6100071388B /* Sleipnir.framework */,
 				4F41761D1A40893A00FFC29A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -126,6 +200,10 @@
 		4F4176281A40895200FFC29A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4FF6E6E21AA71F8D004389B5 /* Queue */,
+				4FF6E6CF1AA70F78004389B5 /* Node */,
+				4FF6E6CC1AA70F0E004389B5 /* Stack */,
+				4FF6E6CB1AA70F06004389B5 /* Trees */,
 				4F7E18D01A41C56C00727A5D /* Set */,
 				4F4176291A40897600FFC29A /* LinkedList */,
 			);
@@ -151,6 +229,47 @@
 			name = Set;
 			sourceTree = "<group>";
 		};
+		4FF6E6CB1AA70F06004389B5 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+				4FF6E6E91AA723F9004389B5 /* BinaryTree */,
+			);
+			name = Trees;
+			sourceTree = "<group>";
+		};
+		4FF6E6CC1AA70F0E004389B5 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				4FF6E6CD1AA70F31004389B5 /* Stack.swift */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		4FF6E6CF1AA70F78004389B5 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				4FF6E6D01AA70F89004389B5 /* Node.swift */,
+			);
+			name = Node;
+			sourceTree = "<group>";
+		};
+		4FF6E6E21AA71F8D004389B5 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				4FF6E6E31AA71FA1004389B5 /* Queue.swift */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		4FF6E6E91AA723F9004389B5 /* BinaryTree */ = {
+			isa = PBXGroup;
+			children = (
+				4FF6E6EA1AA72426004389B5 /* BinaryTreeNode.swift */,
+				4FF6E6E71AA723F6004389B5 /* BinaryTree.swift */,
+			);
+			name = BinaryTree;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -165,6 +284,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4F3CE9451A5C486600238ECE /* iOSDataStructuresInternalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F3CE94F1A5C486600238ECE /* Build configuration list for PBXNativeTarget "iOSDataStructuresInternalTests" */;
+			buildPhases = (
+				4F3CE9421A5C486600238ECE /* Sources */,
+				4F3CE9431A5C486600238ECE /* Frameworks */,
+				4F3CE9441A5C486600238ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F3CE94E1A5C486600238ECE /* PBXTargetDependency */,
+			);
+			name = iOSDataStructuresInternalTests;
+			productName = iOSDataStructuresInternalTests;
+			productReference = 4F3CE9461A5C486600238ECE /* iOSDataStructuresInternalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4F41760B1A40893A00FFC29A /* iOSDataStructures */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F4176221A40893A00FFC29A /* Build configuration list for PBXNativeTarget "iOSDataStructures" */;
@@ -210,6 +347,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Elliott Minns";
 				TargetAttributes = {
+					4F3CE9451A5C486600238ECE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					4F41760B1A40893A00FFC29A = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -232,11 +372,19 @@
 			targets = (
 				4F41760B1A40893A00FFC29A /* iOSDataStructures */,
 				4F4176161A40893A00FFC29A /* iOSDataStructuresTests */,
+				4F3CE9451A5C486600238ECE /* iOSDataStructuresInternalTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4F3CE9441A5C486600238ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F41760A1A40893A00FFC29A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,12 +402,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4F3CE9421A5C486600238ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA744F11A5D598B00EBC65E /* EMListSpec.swift in Sources */,
+				4FA744F31A5D59C700EBC65E /* EMListNode.swift in Sources */,
+				4FA744F21A5D59BE00EBC65E /* EMList.swift in Sources */,
+				4FA744F51A5D59CC00EBC65E /* EMSet.swift in Sources */,
+				4FA744F41A5D59C900EBC65E /* EMListIterator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F4176071A40893A00FFC29A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF6E6E81AA723F6004389B5 /* BinaryTree.swift in Sources */,
 				4F41762B1A40897600FFC29A /* EMList.swift in Sources */,
+				4FF6E6E41AA71FA1004389B5 /* Queue.swift in Sources */,
+				4FF6E6CE1AA70F31004389B5 /* Stack.swift in Sources */,
 				4F2C1EAF1A409929008FE741 /* EMListNode.swift in Sources */,
+				4FF6E6EB1AA72426004389B5 /* BinaryTreeNode.swift in Sources */,
+				4FF6E6D11AA70F89004389B5 /* Node.swift in Sources */,
 				4F7E18D21A41C58A00727A5D /* EMSet.swift in Sources */,
 				4FCEEBE21A4456CF00EF585A /* EMListIterator.swift in Sources */,
 			);
@@ -269,19 +434,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7E18D31A41C58A00727A5D /* EMSet.swift in Sources */,
 				4FCEEBE51A44587700EF585A /* EMListIteratorTests.swift in Sources */,
+				4FF6E6D31AA71400004389B5 /* StackSpec.swift in Sources */,
+				4FF6E6E11AA71AFC004389B5 /* StackTests.swift in Sources */,
 				4F9299B31A42F026008A8CC9 /* SetTests.swift in Sources */,
-				4F2C1EAD1A409091008FE741 /* EMList.swift in Sources */,
-				4F2C1EB01A409B3D008FE741 /* EMListNode.swift in Sources */,
+				4F45C0351A5AEF6200024228 /* EMListSpec.swift in Sources */,
+				4FF6E6ED1AA726D1004389B5 /* TreeTests.swift in Sources */,
+				4FF6E6E61AA721AF004389B5 /* QueueTests.swift in Sources */,
 				4F41761F1A40893A00FFC29A /* EMListTests.swift in Sources */,
-				4FCEEBE31A4456CF00EF585A /* EMListIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4F3CE94E1A5C486600238ECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F41760B1A40893A00FFC29A /* iOSDataStructures */;
+			targetProxy = 4F3CE94D1A5C486600238ECE /* PBXContainerItemProxy */;
+		};
 		4F41761A1A40893A00FFC29A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4F41760B1A40893A00FFC29A /* iOSDataStructures */;
@@ -290,6 +461,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4F3CE9501A5C486600238ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSDataStructuresInternalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F3CE9511A5C486600238ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iOSDataStructuresInternalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		4F4176201A40893A00FFC29A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,27 +584,40 @@
 		4F4176231A40893A00FFC29A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DataStructures-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4F4176241A40893A00FFC29A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DataStructures-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -411,6 +630,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DataStructures-dnespaqdhclwgqcobhbrydglwyka/Build/Products/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -418,6 +639,7 @@
 				);
 				INFOPLIST_FILE = "DataStructures-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -428,9 +650,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DataStructures-dnespaqdhclwgqcobhbrydglwyka/Build/Products/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "DataStructures-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -438,6 +663,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4F3CE94F1A5C486600238ECE /* Build configuration list for PBXNativeTarget "iOSDataStructuresInternalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F3CE9501A5C486600238ECE /* Debug */,
+				4F3CE9511A5C486600238ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4F4176061A40893A00FFC29A /* Build configuration list for PBXProject "DataStructures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

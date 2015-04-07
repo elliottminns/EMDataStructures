@@ -6,9 +6,7 @@
 //  Copyright (c) 2014 Elliott Minns. All rights reserved.
 //
 
-import Foundation
-
-public class EMList<T: Equatable> : SequenceType {
+public class EMList<T: Equatable> : SequenceType, Equatable {
     internal var firstNode: EMListNode<T>? = nil
     internal var lastNode: EMListNode<T>? = nil
     private var countIndex: Int
@@ -170,4 +168,10 @@ public class EMList<T: Equatable> : SequenceType {
         }
         return currentNode
     }
+}
+
+public func == <T>(lhs: EMList<T>, rhs: EMList<T>) -> Bool {
+    let lhsPtr: COpaquePointer = Unmanaged<AnyObject>.passUnretained(lhs).toOpaque()
+    let rhsPtr: COpaquePointer = Unmanaged<AnyObject>.passUnretained(rhs).toOpaque()
+    return lhsPtr == rhsPtr
 }

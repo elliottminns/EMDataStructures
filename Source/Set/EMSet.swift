@@ -9,7 +9,7 @@
 public class EMSet<T: Hashable>: SequenceType {
     private var array: Array<EMList<T>>
     var capacity: Int
-    var count: Int
+    public var count: Int
     
     public init() {
         capacity = 10

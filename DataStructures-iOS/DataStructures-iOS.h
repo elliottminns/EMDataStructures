@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double DataStructures_iOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char DataStructures_iOSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DataStructures_iOS/PublicHeader.h>
-
-

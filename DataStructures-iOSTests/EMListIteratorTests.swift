@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import iOSDataStructures
 
 class EMListIteratorTests: XCTestCase {
     var list: EMList<Int>!

@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import iOSDataStructures
 
 class LinkedListTests: XCTestCase {
     let count = 10000;
@@ -124,5 +125,4 @@ class LinkedListTests: XCTestCase {
         
         XCTAssert(index == 4, "Index should equal 4 showing loop completed")
     }
-    
 }
