@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   s.author             = { "Elliott Minns" => "" }
   # Or just: s.author    = "Elliott Minns"
   # s.authors            = { "Elliott Minns" => "" }
-  # s.social_media_url   = "http://twitter.com/Elliott Minns"
+  s.social_media_url   = "http://twitter.com/elliottwins"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/elliott-minns/EMDataStructures.git", :commit => "a0f2d261efafab83a4f7cb2a87d8005bc00150a2" }
+  s.source       = { :git => "https://github.com/elliott-minns/EMDataStructures.git"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files = 'Source/*.swift'
 
   # s.public_header_files = "Classes/**/*.h"
 
