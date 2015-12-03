@@ -15,7 +15,7 @@ These results can be reproduced in the Tests module by setting the count for the
 EMListIterator
 --------------
 
-This is an iterator for use with an EMList. Using the iterator allows you to iterate over the list in O(1) time in situations where you may not need to iterate in one atomic pass. Such examples being when using a UITableViewDataSource with the Linked list. The iterator keeps a note of where in the list was last accessed and allows for forward or backwards iteration.
+This is an iterator for use with an EMList. Using the iterator allows you to iterate over the list in O(n) time in situations where you may not need to iterate in one atomic pass. Such examples being when using a UITableViewDataSource with the Linked list. The iterator keeps a note of where in the list was last accessed and allows for forward or backwards iteration.
 
 An iterator example is below:
 
