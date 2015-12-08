@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0876E26B10F2FB027EFD956CCE3D474785DF4408",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0876E26B10F2FB027EFD956CCE3D474785DF4408" : 0,
+    "6FF50F64FF43A6030DA23D917528D8209EA9B926" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4C827AF6-68C6-4AEE-A52D-6D251558B0E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0876E26B10F2FB027EFD956CCE3D474785DF4408" : "DataStructures",
+    "6FF50F64FF43A6030DA23D917528D8209EA9B926" : "DataStructures\/Libs\/Sleipnir"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DataStructures",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DataStructures.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:elliott-minns\/EMDataStructures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0876E26B10F2FB027EFD956CCE3D474785DF4408"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/railsware\/sleipnir",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FF50F64FF43A6030DA23D917528D8209EA9B926"
+    }
+  ]
+}
