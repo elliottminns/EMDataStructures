@@ -57,7 +57,7 @@ public class EMList<T: Equatable> : SequenceType, Equatable {
             var currentNode: EMListNode<T>?
             var objectFound = false
             var currentIndex = -1
-            do {
+            repeat {
                 if (currentIndex == -1) {
                     currentNode = firstNode
                 } else {
@@ -133,10 +133,10 @@ public class EMList<T: Equatable> : SequenceType, Equatable {
         }
     }
     
-    public func generate() -> GeneratorOf<T> {
+    public func generate() -> AnyGenerator<T> {
         var currentNode: EMListNode<T>? = nil
 
-        return GeneratorOf<T> {
+        return anyGenerator {
             if (currentNode == nil) {
                 if let firstNode = self.firstNode {
                     currentNode = firstNode

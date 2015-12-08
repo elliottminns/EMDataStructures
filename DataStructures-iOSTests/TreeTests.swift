@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Elliott Minns. All rights reserved.
 //
 
-import iOSDataStructures
 import XCTest
+@testable import iOSDataStructures
 
 class TreeTests: XCTestCase {
 
@@ -26,25 +26,25 @@ class TreeTests: XCTestCase {
         for var i = 0; i < 40; i++ {
             tree.append(i)
         }
-        var lists = linkedListsFromTree(tree)
-        println(lists.count)
+        let lists = linkedListsFromTree(tree)
+        print(lists.count)
     }
     
     func linkedListsFromTree(tree: BinaryTree<Int>) -> EMList<EMList<Int>> {
         
-        var queue = Queue<BinaryTreeNode<Int>>()
+        let queue = Queue<BinaryTreeNode<Int>>()
         if let root = tree.root {
             queue.enqueue(root)
         }
         
-        var listOfLists = linkedListFromQueue(queue)
+        let listOfLists = linkedListFromQueue(queue)
         return listOfLists
     }
     
     func linkedListFromQueue(queue: Queue<BinaryTreeNode<Int>>) -> EMList<EMList<Int>> {
-        var childQueue = Queue<BinaryTreeNode<Int>>()
-        var lists = EMList<EMList<Int>>()
-        var list = EMList<Int>()
+        let childQueue = Queue<BinaryTreeNode<Int>>()
+        let lists = EMList<EMList<Int>>()
+        let list = EMList<Int>()
         
         while !queue.isEmpty() {
             if let currentNode = queue.dequeue() {
@@ -62,7 +62,7 @@ class TreeTests: XCTestCase {
         
         lists.append(list)
         if (!childQueue.empty) {
-            var childLists = linkedListFromQueue(childQueue)
+            let childLists = linkedListFromQueue(childQueue)
             for childList in childLists {
                 lists.append(childList)
             }

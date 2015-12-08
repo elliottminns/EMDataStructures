@@ -8,7 +8,7 @@
 
 import UIKit
 import XCTest
-import iOSDataStructures
+@testable import iOSDataStructures
 
 class EMListIteratorTests: XCTestCase {
     var list: EMList<Int>!
@@ -40,7 +40,7 @@ class EMListIteratorTests: XCTestCase {
     func testForwardIteration() {
         iterator.first
         var index = 0
-        do {
+        repeat {
             XCTAssertEqual(iterator.nextValue!, ++index, "The value should equal the index.")
         } while iterator.next
     }
@@ -49,7 +49,7 @@ class EMListIteratorTests: XCTestCase {
         iterator.last
         var index = list.count - 1
     
-        do {
+        repeat {
             XCTAssertEqual(iterator.previousValue!, --index, "The value should equal the index when reversing.")
         } while iterator.previous
     }

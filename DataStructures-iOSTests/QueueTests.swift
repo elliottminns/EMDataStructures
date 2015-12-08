@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Elliott Minns. All rights reserved.
 //
 
-import iOSDataStructures
+@testable import iOSDataStructures
 import XCTest
 
 class QueueTests: XCTestCase {

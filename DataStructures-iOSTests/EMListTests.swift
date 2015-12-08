@@ -8,7 +8,7 @@
 
 import UIKit
 import XCTest
-import iOSDataStructures
+@testable import iOSDataStructures
 
 class LinkedListTests: XCTestCase {
     let count = 10000;
@@ -22,7 +22,7 @@ class LinkedListTests: XCTestCase {
     }
     
     func testListPerformance() {
-        var list = EMList<Int>()
+        let list = EMList<Int>()
         self.measureBlock() {
             for var i = 0; i < self.count; i++ {
                 list.append(i)
@@ -41,7 +41,7 @@ class LinkedListTests: XCTestCase {
     
     func testGettingIndexOfObject() {
         let object: Int = 3
-        var list = createListWithFourIntegers()
+        let list = createListWithFourIntegers()
         let index = list.indexOfObject(object)
         
         XCTAssertEqual(index!, 3, "Index should equal 3")
@@ -54,7 +54,7 @@ class LinkedListTests: XCTestCase {
     }
     
     func createListWithFourIntegers() -> EMList<Int> {
-        var list = EMList<Int>()
+        let list = EMList<Int>()
         list.append(0);
         list.append(1);
         list.append(2);
@@ -71,9 +71,9 @@ class LinkedListTests: XCTestCase {
     }
     
     func testListCount() {
-        var list = EMList<Int>()
-        var counts = 100
-        var removes = counts / 3
+        let list = EMList<Int>()
+        let counts = 100
+        let removes = counts / 3
         for var i = 0; i < counts; i++ {
             list.append(i)
         }
@@ -101,7 +101,7 @@ class LinkedListTests: XCTestCase {
     }
     
     func testRemovingFromList() {
-        var list = createListWithFourIntegers()
+        let list = createListWithFourIntegers()
         
         list.removeItemAtIndex(1);
         XCTAssert(list[0] == 0, "First item should equal 0.");
@@ -110,14 +110,14 @@ class LinkedListTests: XCTestCase {
     }
     
     func testListInserting() {
-        var list = createListWithFourIntegers()
+        let list = createListWithFourIntegers()
         
         list.insert(4, atIndex: 1)
         XCTAssert(list[1] == 4, "Second item should equal 4 after insertion.");
     }
     
     func testIteration() {
-        var list = createListWithFourIntegers()
+        let list = createListWithFourIntegers()
         var index = 0;
         for item in list {
             XCTAssert(item == index++, "Item should equal the same as the index")

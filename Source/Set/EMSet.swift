@@ -33,13 +33,11 @@ public class EMSet<T: Hashable>: SequenceType {
         return currentObject
     }
     
-    public func generate() -> GeneratorOf<T> {
-        var currentList: EMList<T>? = nil
-        var currentListNode: EMListNode<T>? = nil
+    public func generate() -> AnyGenerator<T> {
         let values = self.toArray()
         var currentIndex = 0
         
-        return GeneratorOf<T> {
+        return anyGenerator {
             if currentIndex + 1 < values.count {
                 return values[currentIndex++]
             } else {
@@ -90,7 +88,7 @@ public class EMSet<T: Hashable>: SequenceType {
     
     private func reassignObjects() {
         capacity *= 2;
-        var newArray = createArrayOfListsToCapacity(capacity)
+        let newArray = createArrayOfListsToCapacity(capacity)
         
         // Iterate through the set.
         for list in array {

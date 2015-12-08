@@ -18,11 +18,11 @@ public class BinaryTree<T> {
         let node = BinaryTreeNode(value: value)
         if let root = self.root {
             
-            var queue = Queue<BinaryTreeNode<T>>()
+            let queue = Queue<BinaryTreeNode<T>>()
             queue.enqueue(root)
             
             while !queue.empty {
-                var currentNode = queue.dequeue()!
+                let currentNode = queue.dequeue()!
                 if currentNode.left == nil {
                    currentNode.left = node
                     break;

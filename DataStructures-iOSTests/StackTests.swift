@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import iOSDataStructures
+@testable import iOSDataStructures
 
 class StackTests: XCTestCase {
     
@@ -28,7 +28,7 @@ class StackTests: XCTestCase {
     }
 
     func testIsEmpty() {
-        var emptyStack = Stack<Int>()
+        let emptyStack = Stack<Int>()
         XCTAssert(emptyStack.isEmpty(), "empty stack should be empty")
         XCTAssertFalse(stack.isEmpty(), "Our stack should not be empty")
     }
@@ -46,7 +46,7 @@ class StackTests: XCTestCase {
     }
     
     func testPushWorks() {
-        var newValue = 10
+        let newValue = 10
         stack.push(newValue)
         XCTAssert(stack.peek() == newValue, "Stack should push new value correctly")
         

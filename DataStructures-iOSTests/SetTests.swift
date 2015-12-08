@@ -8,7 +8,7 @@
 
 import UIKit
 import XCTest
-import iOSDataStructures
+@testable import iOSDataStructures
 
 class SetTests: XCTestCase {
 
